@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>简易计算器</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+
+<body>
+    <div class="container">
+        <table>
+            <thead>
+                <!-- 表头 -->
+                <th> 请选择想完成的运算：</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>
+                        <input class="button pink bigrounded" type="button" value="加add" onclick="setOp('+', 'add');" />
+                    </td>
+                    <td>
+                        <input class="button pink bigrounded" type="button" value="减miner" onclick="setOp('-', 'miner');" />
+                    </td>
+                    <td>
+                        <input class="button pink bigrounded" type="button" value="乘times" onclick="setOp('*', 'times');" />
+                    </td>
+                    <td>
+                        <input class="button pink bigrounded" type="button" value="除divide" onclick="setOp('/', 'divide');" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table id="tb_calc" style="display:none;">
+            <thead>
+                <!-- 表头 -->
+                <th> 请输入x和y的值：</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <!-- 用户输入框 -->
+                    <td>
+                        <input id="x" type="text" style="width:100px" value="" name="x" class="score" />
+                    </td>
+                    <td>
+                        <lable id="op" name="op"></lable>
+                    </td>
+                    <!-- 用户输入框 -->
+                    <td>
+                        <input id="y" type="text" style="width:100px" value="" name="y" class="score" /> </td>
+                    <td>
+                        <input id="opTips" type="button" value="" onclick="calc();" class="button pink bigrounded" /> </td>
+                    <!-- 结果  -->
+                    <td>
+                        <lable id="z" name="z"></lable>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
