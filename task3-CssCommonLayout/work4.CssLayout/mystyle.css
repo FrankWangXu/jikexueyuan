@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {}
+
+.header {
+    background: orange;
+    height: 150px;
+}
+
+.atricle {
+    background: green;
+    height: 300px;
+    overflow: hidden;
+}
+
+.footer {
+    background-color: yellow;
+    height: 100px;
+}
+
+.atricle .left {
+    background-color: blue;
+    float: left;
+    color: white;
+    width: 150px;
+    height: 16px;
+    margin-left: -100%;
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+    /*        position: relative;
+        left: -150px;*/
+}
+
+.atricle .right {
+    background-color: pink;
+    float: left;
+    width: 100px;
+    /*height: 16px;*/
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+    margin-left: -100px;
+    /*        position: relative;
+        right: -100px;*/
+}
+
+.atricle .middle {
+    background-color: brown;
+    float: left;
+    width: 100%;
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+}
+
+.inner {
+    margin-left: 150px;
+    margin-right: 100px;
+}
+
+div#conterbody {
+    width: 960px;
+    margin: auto;
+}
+
+div#left {
+    width: 740px;
+    float: left;
+}
+
+div#left-z {
+    width: 200px;
+    float: left;
+    background-color: #0752ff;
+    line-height: 600px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    margin: 0 0 20px 0;
+    color: #ffffff;
+}
+
+div#left-y {
+    width: 520px;
+    float: right;
+    background-color: #41db50;
+    line-height: 600px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    margin: 0 0 20px 0;
+    color: #ffffff;
+}
+
+div#right {
+    width: 200px;
+    float: right;
+    background-color: #ff6600;
+    line-height: 600px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    margin: 0 0 20px 0;
+    color: #ffffff;
+}
+
+
+/*大于1000px的时候*/
+
+@media screen and (min-width:1000px) {
+    div#conterbody {
+        width: 1000px;
+    }
+    div#left {
+        width: 780px;
+        float: left;
+    }
+    div#left-z {
+        width: 200px;
+        float: left;
+        background-color: #0752ff;
+        line-height: 600px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 2em;
+        margin: 0 0 20px 0;
+        color: #ffffff;
+    }
+    div#left-y {
+        width: 560px;
+        float: right;
+        background-color: #41db50;
+        line-height: 600px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 2em;
+        margin: 0 0 20px 0;
+        color: #ffffff;
+    }
+    div#right {
+        width: 200px;
+        float: right;
+        background-color: #ff6600;
+        line-height: 600px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 2em;
+        margin: 0 0 20px 0;
+        color: #ffffff;
+    }
+}
+
+
+/*最大不超过999像素  最小不小于640px*/
+
+@media screen and (min-width:640px) and (max-width: 999px) {
+    div#conterbody {
+        width: 640px;
+    }
+    div#left {
+        width: 640px;
+        float: left;
+    }
+    div#left-z {
+        width: 200px;
+        float: left;
+        line-height: 430px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 2em;
+        margin: 0 0 20px 0;
+        color: #ffffff;
+    }
+    div#left-y {
+        width: 420px;
+        float: right;
+        line-height: 430px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 2em;
+        margin: 0 0 20px 0;
+        color: #ffffff;
+    }
+    div#right {
+        width: 100%;
+        float: none;
+        clear: both;
+        line-height: 150px;
+        line-height: 430px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 2em;
+        margin: 0 0 20px 0;
+        color: #ffffff;
+    }
+}
+
+
+/*最大不超过639px*/
+
+@media screen and (max-width:639px) {
+    div#conterbody {
+        width: 100%;
+    }
+    div#left {
+        width: 100%;
+        float: none;
+    }
+    div#left-z {
+        line-height: 200px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 2em;
+        margin: 0 0 20px 0;
+        color: #ffffff;
+        width: 100%;
+        float: none;
+    }
+    div#left-y {
+        width: 100%;
+        float: none;
+        line-height: 430px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 2em;
+        margin: 0 0 20px 0;
+        color: #ffffff;
+    }
+    div#right {
+        width: 100%;
+        float: none;
+        clear: both;
+        line-height: 200px;
+        line-height: 430px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 2em;
+        margin: 0 0 20px 0;
+        color: #ffffff;
+    }
+}

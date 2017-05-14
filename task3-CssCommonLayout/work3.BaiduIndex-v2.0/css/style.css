@@ -1,0 +1,382 @@
+/*稳定性控制*/
+body,
+p,
+form,
+ul,
+li {
+    margin-right: 0;
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    position: relative;
+    min-width: 810px;
+    min-height: 600px;
+}
+/*设置和更多的下拉菜单*/
+/* IE6 专用 */ 
+.bold:hover,
+.bold:active {
+    color: blue;
+}
+/* 其他浏览器 */ 
+a.bold:hover,
+a.bold:active {
+    color: blue;
+}
+
+label.menu div {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 80px;
+    color: #666;
+}
+
+label.menu div a {
+    display: block;
+    line-height: 20px;
+    text-decoration: none;
+    color: #666;
+}
+
+label.menu:hover div {
+    display: block;
+}
+
+label.menu2 div {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+}
+
+label.menu2 div a {
+    display: block;
+    width: 66px;
+    height: 76px;
+    margin: 0 auto;
+    border-bottom: #f0f0f0 1px solid;
+    overflow: hidden;
+    color: #666;
+    text-decoration: none;
+    text-align: center;
+    list-style: none;
+}
+
+label.menu2:hover div {
+    display: block;
+}
+
+.music {
+    width: 50px;
+    height: 36px;
+    display: block;
+    background: url("../img/yinyue.png") no-repeat;
+    cursor: pointer;
+    text-align: center;
+}
+
+.img {
+    width: 50px;
+    height: 36px;
+    display: block;
+    background: url("../img/tu.png") no-repeat;
+    cursor: pointer;
+    text-align: left;
+}
+
+.zhidao {
+    width: 40px;
+    height: 36px;
+    display: block;
+    background: url("../img/wenhao.png") no-repeat;
+    cursor: pointer;
+    text-align: center;
+}
+
+.wenku {
+    width: 40px;
+    height: 36px;
+    display: block;
+    background: url("../img/wen.png") no-repeat;
+    cursor: pointer;
+    text-align: center;
+}
+
+.bang {
+    width: 40px;
+    height: 36px;
+    display: block;
+    background: url("../img/shu.png") no-repeat;
+    cursor: pointer;
+    text-align: center;
+}
+
+.tuiguang {
+    width: 40px;
+    height: 36px;
+    display: block;
+    background: url("../img/qiu.png") no-repeat;
+    cursor: pointer;
+    text-align: center;
+}
+/*头部格式*/
+header {
+    width: 100%;
+    height: 64px;
+    float: right;
+    font-size: 13px;
+    font-family: "宋体";
+    color: #333
+    .color:#333\9; /*IE6、7、8识别*/
+}
+
+/* IE6 专用 */ 
+.sp {
+    _line-height: 64px;
+    _float: right;
+    _color:#333;
+    _font-size: 13px;
+    _font-family: "宋体";
+    _text-decoration: underline;
+    _color: #333
+}
+/* 其他浏览器 */ 
+header>span {
+    line-height: 64px;
+    float: right;
+}
+
+header>span>a {
+    font-size: 13px;
+    font-family: "宋体";
+    text-decoration: underline;
+    color: #333
+}
+/* IE6 专用 */ 
+.bold {
+    _font-weight: bold;
+}
+/* 其他浏览器 */ 
+header>span>.bold {
+    font-weight: bold;
+}
+
+.list {
+    border: 0;
+    height: 25px;
+    width: 60px;
+    background: #36F;
+    color: #fff;
+}
+/*中间格式*/
+article {
+    position: relative;
+    top: 250px;
+    display: block;
+    text-align: center;
+    list-style: none;
+    font-family: "宋体";
+    font-size: 12px;
+}
+
+.s_form {
+    position: relative;
+    top: -191px;
+}
+
+.pic {
+    text-align: center;
+}
+
+#form {
+    margin: 22px auto 0;
+    width: 641px;
+    text-align: left;
+    z-index: 100;
+    position: relative;
+}
+
+.input {
+    position: relative;
+    border: 1px solid #b6b6b6;
+    display: inline-block;
+    vertical-align: top;
+    width: 539px;
+    height: 34px;
+    margin-right: 0;
+    border-right-width: 0;
+    border-color: #b8b8b8 transparent #ccc #b8b8b8;
+    float: left;
+}
+.input:hover,
+.input:active {
+    border: 1px solid #3385ff;
+}
+
+.soutu-btn {
+    z-index: 1;
+    position: absolute;
+    right: 11px;
+    top: 50%;
+    margin-top: -8px;
+    height: 16px;
+    width: 18px;
+    background: #fff url("../img/camera.png") no-repeat;
+    cursor: pointer;
+}
+
+span.soutu-btn:hover{
+    background-position: 0 -20px;
+}
+
+.s_ipt {
+    position: relative;
+    width: 500px;
+    height: 22px;
+    margin: 6px 0 0 7px;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+.bg {
+    background-image: none;
+    width: auto;
+    height: auto;
+    border-bottom: 1px solid transparent;
+    display: inline-block;
+    background-position: -120px -48px;
+    z-index: 0;
+    vertical-align: top;
+    float: right;
+}
+
+
+.btn {
+    border: 0;
+    width: 100px;
+    height: 36px;
+    background: #3385ff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #fff;
+    border-bottom: 1px solid #2d78f4;
+    outline: medium;
+    cursor: pointer;
+}
+.btn:hover,
+.btn:active {
+    background-color: #2d78f4;
+}
+/*底部格式*/
+footer {
+    height: 100px;
+    position: absolute;
+    bottom: 23px;
+    text-align: left;
+    width: 100%;
+    margin: 0 auto 0 auto;
+    font-size: 12px;
+    font-family: "宋体";
+}
+
+div {
+    display: block;
+}
+
+.Wrapper {
+    text-align: center;
+}
+
+#qrcode {
+    display: inline-block;
+}
+
+.item-1 {
+    float: left;
+}
+
+.img {
+    float: left;
+}
+
+.text {
+    float: left;
+    color: #999;
+    line-height: 23px;
+    margin: 8px 0 0 10px;
+}
+
+.item-2 {
+    margin-left: 33px;
+    float: left;
+}
+
+#ftConw,
+#ftConw a {
+    color: #999;
+}
+
+#ftConw {
+    display: inline-block;
+    text-align: left;
+    margin-left: 33px;
+    line-height: 22px;
+    position: relative;
+    top: -2px;
+}
+#lh #seth,
+#lh #setf {
+    margin-left: 0;
+}
+/*IE6专用*/
+#setf {
+    _margin-left: 0;
+}
+#seth {
+    display: none;
+    text-decoration: underline;
+    _margin-left:0;/*IE6专用*/
+}
+
+#lh a {
+    margin-left: 62px;
+    text-decoration: underline;
+}
+
+#cp {
+    margin-left: 62px;
+}
+
+#icrlogo {
+    background-position: -600px -96px;
+    position: relative;
+    top: 3px;
+    display: inline-block;
+}
+
+#jgwab {
+    margin-left: 62px;
+}
+
+#jgwablogo {
+    background-position: -623px -96px;
+    position: relative;
+    top: 3px;
+    margin-right: 6px;
+    display: inline-block;
+}
