@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>简易计算器</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-8 col-xs-offset-2 wang">
+                <!-- 显示框 -->
+                <div class="input-group">
+                    <input class="form-control wang1" type="input" disabled="disabled" id="equation" value="" />
+                    <span class="input-group-addon glyphicon glyphicon-pencil wang1" aria-hidden="true"></span>
+                </div>
+                <!-- 第一行 -->
+                <div>
+                    <input class="col-xs-3 myButton" type="button" value="log" onclick="solve (this.value)" />
+                    <input class="col-xs-3 myButton" type="button" value="sqrt" onclick="solve (this.value)" />
+                    <input class="col-xs-6 myButton" type="button" value="C" onclick="clear_equation ();" />
+                </div>
+                <!-- 第二行，三角函数 -->
+                <div>
+                    <input class="col-xs-3 myButton" type="button" value="sin" onclick="solve (this.value)" />
+                    <input class="col-xs-3 myButton" type="button" value="cos" onclick="solve (this.value)" />
+                    <input class="col-xs-3 myButton" type="button" value="tan" onclick="solve (this.value)" />
+                    <input class="col-xs-3 myButton" type="button" value="/" onclick="equation (this.value)" />
+                </div>
+                <!-- 第三行 -->
+                <div>
+                    <input class="col-xs-3 myButton" type="button" value="7" onclick="equation (this.value)" />
+                    <input class="col-xs-3 myButton" type="button" value="8" onclick="equation (this.value)" />
+                    <input class="col-xs-3 myButton" type="button" value="9" onclick="equation (this.value)" />
+                    <input class="col-xs-3 myButton" type="button" value="*" onclick="equation (this.value)" />
+                </div>
+                <!-- 第四行 -->
+                <div>
+                    <input class="col-xs-3 myButton" type="button" value="4" onclick="equation (this.value)" />
+                    <input class="col-xs-3 myButton" type="button" value="5" onclick="equation (this.value)" />
+                    <input class="col-xs-3 myButton" type="button" value="6" onclick="equation (this.value)" />
+                    <input class="col-xs-3 myButton" type="button" value="-" onclick="equation (this.value)" />
+                </div>
+                <!-- 第五行 -->
+                <div>
+                    <input class="col-xs-3 myButton" type="button" value="1" onclick="equation (this.value)" />
+                    <input class="col-xs-3 myButton" type="button" value="2" onclick="equation (this.value)" />
+                    <input class="col-xs-3 myButton" type="button" value="3" onclick="equation (this.value)" />
+                    <input class="col-xs-3 myButton" type="button" value="+" onclick="equation (this.value)" />
+                </div>
+                <!-- 第六行 -->
+                <div>
+                    <input class="col-xs-3 myButton" type="button" value="." onclick="equation (this.value)" />
+                    <input class="col-xs-3 myButton" type="button" value="0" onclick="equation (this.value)" />
+                    <input class="col-xs-6 myButton" type="button" value="=" onclick="solve (this.value);" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

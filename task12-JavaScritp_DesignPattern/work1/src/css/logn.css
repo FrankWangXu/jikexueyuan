@@ -1,0 +1,594 @@
+* {
+    margin: 0;
+    padding: 0
+}
+body {
+    background: url(../img/bg0.jpg) fixed;
+}
+.center {
+    padding-top: 5px;
+    text-align: center;
+    margin: 0 auto;
+}
+/*头部*/
+/* IE6 专用 */
+/*鼠标划过时字体变色*/
+.bold:hover,
+.bold:active {
+    color: blue;
+}
+/* 其他浏览器 */
+/*鼠标划过时字体变色*/
+a.bold:hover,
+a.bold:active {
+    color: blue;
+}
+/*左边导航*/
+.header-links-left{
+    float: left;
+    text-align: center;
+    line-height: 35px;
+}
+.header-links-left a{
+    color: #fff;
+    font-size: 13px;
+}
+#city{
+    float: left;
+}
+/*切肤效果的出现*/
+.head {
+    width: 100%;
+    height: 0px;
+    /*改变其height令其出现和消失*/
+    background: #fff;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    border-bottom: 1px solid #e3e3e3;
+    overflow: hidden;
+    z-index: 100;
+}
+/*切肤效果顶部导航*/
+.title {
+    width: 911px;
+    height: 45px;
+    margin: 0px auto;
+}
+.heitiao {
+    width: 100%;
+    height: 35px;
+    background: rgba(0, 0, 0, 0.3);
+}
+.menu {
+    width: 100%;
+    height: 45px;
+    border-bottom: 1px solid #e3e3e3;
+}
+/*热门标签*/
+.p1 {
+    width: 861px;
+    height: 45px;
+    background: url(../img/p1.png);
+    float: left;
+    cursor: pointer;
+}
+/*收起标签*/
+.p2 {
+    width: 50px;
+    height: 45px;
+    background: url(../img/sp.png);
+    float: right;
+    cursor: pointer;
+}
+/*小图演示*/
+.bg1 {
+    width: 911px;
+    height: 205px;
+    margin: 0 auto;
+}
+.bgcon {
+    width: 590px;
+    height: 190px;
+    float: left;
+}
+.bgcon img {
+    width: 97px;
+    height: 59px;
+    display: block;
+    float: left;
+    margin-right: 1px;
+    margin-bottom: 1px;
+}
+.bgcon .big {
+    width: 195px;
+    height: 119px;
+}
+.bgcon .last {
+    position: relative;
+    top: -60px;
+}
+.bgyl {
+    width: 264px;
+    height: 180px;
+    float: right;
+    background: url(../img/bg1s.jpg);
+    background-size: 294px;
+}
+/*用户的下拉菜单*/
+label.menu1 div {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 140px;
+    color: #000;
+    box-shadow: 1px 1px 5px #666;
+    padding: 5px;
+    background-color: #fff;
+}
+label.menu1 a {
+    color: #fff;
+    font-size: 13px;
+}
+label.menu1 div a {
+    display: block;
+    line-height: 20px;
+    text-decoration: none;
+    color: #666;
+}
+/*用户的下拉菜单上的小三角*/
+.bdnuarrow1 {
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    position: absolute;
+    top: -10px!important;
+    left: 50%;
+    margin-left: -5px;
+    padding: 0!important;
+}
+.bdnuarrow1 em {
+    border-bottom-color: #d8d8d8!important;
+    top: -1px;
+}
+.bdnuarrow1 em,
+.bdnuarrow1 i {
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    position: absolute;
+    border: 5px solid transparent;
+    border-style: dashed dashed solid dashed;
+}
+.bdnuarrow1 i {
+    border-bottom-color: #fff;
+    top: 0;
+}
+/*设置的下拉菜单*/
+label.menu div {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 78px;
+    color: #000;
+    box-shadow: 1px 1px 5px #666;
+    padding: 5px;
+    background-color: #fff;
+}
+label.menu a {
+    color: #fff;
+    font-size: 13px;
+}
+label.menu div a {
+    display: block;
+    line-height: 20px;
+    text-decoration: none;
+    color: #666;
+}
+/*设置下拉菜单上的小三角*/
+.bdnuarrow {
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    position: absolute;
+    top: -10px!important;
+    left: 50%;
+    margin-left: -5px;
+    padding: 0!important;
+}
+.bdnuarrow em {
+    border-bottom-color: #d8d8d8!important;
+    top: -1px;
+}
+.bdnuarrow em,
+.bdnuarrow i {
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    position: absolute;
+    border: 5px solid transparent;
+    border-style: dashed dashed solid dashed;
+}
+.bdnuarrow i {
+    border-bottom-color: #fff;
+    top: 0;
+}
+/*更多产品的下拉菜单*/
+.s_bdmainlink {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 0;
+    width: 75px;
+    min-height: 100px;
+    border-left: 1px solid #e7e7e7;
+    background-color: #f9f9f9;
+    overflow: hidden;
+    text-shadow: none;
+    font-size: 13px;
+    text-align: right;
+    color: #999;
+}
+.s_briscrollwrapperContainer {
+    position: relative;
+    overflow: hidden;
+    position: relative;
+    height: 1063px;
+}
+.s_bdbriwrapper a {
+    display: block;
+    text-align: center;
+    width: 66px;
+    height: 76px;
+    margin: 0 auto;
+    font-size: 12px;
+    border-bottom: #f0f0f0 1px solid;
+    color: #666;
+    text-decoration: none;
+    overflow: hidden;
+    text-shadow: none;
+    line-height: 14px;
+}
+.s_bdbriimgtitle {
+    padding-right: 10px;
+}
+/*更多产品的下拉菜单的图标*/
+.music,
+.img1,
+.zhidao,
+.wenku,
+.bang,
+.tuiguang {
+    width: 28px;
+    height: 36px;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    background: url(../img/menu2.png) 0 0 no-repeat;
+    background-size: 200px auto;
+    margin-left: 18px;
+    padding: 0;
+    margin-bottom: -20px;
+}
+.music {
+    background-position: -56px center;
+    width: 33px;
+}
+.img1 {
+    background-position: -87px center;
+    width: 30px;
+}
+.zhidao {
+    background-position: -28px center;
+    width: 28px;
+}
+.wenku {
+    background-position: --114px center;
+    width: 28px;
+}
+.bang {
+    background-position: -144px center;
+}
+.tuiguang {
+    background-position: -171px center;
+}
+/*菜单栏设置*/
+.s_bdbriwrapper a span {
+    display: block;
+    height: 36px;
+    margin: 10px 14px;
+    cursor: pointer;
+}
+span {
+    line-height: 35px;
+    float: right;
+}
+span>a {
+    font-size: 13px;
+    font-family: "宋体";
+    text-decoration: underline;
+    color: #FFF;
+}
+.content a {
+    color: #000;
+}
+.bold {
+    font-weight: bold;
+}
+.list {
+    height: 32px;
+    width: 75px;
+    background: #3388FF;
+    color: #fff;
+/*    margin-left: -24px;*/
+    padding-top: 3px;
+    float: right;
+    font-size: 13px;
+    text-align: center;
+    line-height: 32px;
+}
+.clear {
+    clear: both;
+}
+/*logo和搜索框*/
+.s_logo {
+    display: none!important;
+}
+.s-search-area {
+    display: none!important;
+}
+.s_form {
+    position: relative;
+    top: 100px;
+}
+.pic {
+    padding-left: 45%;
+}
+.logo {
+    margin-left: -40px;
+    margin-top: -45px;
+    clear: both;
+}
+#form {
+    margin: 10px auto 0;
+    width: 641px;
+    text-align: left;
+    z-index: 100;
+    position: relative;
+}
+.input {
+    position: relative;
+    border: 1px solid #b6b6b6;
+    display: inline-block;
+    vertical-align: top;
+    width: 539px;
+    height: 34px;
+    margin-right: 0;
+    border-right-width: 0;
+    border-color: #b8b8b8 transparent #ccc #b8b8b8;
+    float: left;
+    background-color: #fff;
+}
+.input:hover,
+.input:active {
+    border: 1px solid #3385ff;
+}
+.soutu-btn {
+    z-index: 1;
+    position: absolute;
+    right: 11px;
+    top: 50%;
+    margin-top: -8px;
+    height: 16px;
+    width: 18px;
+    background: #fff url("../img/camera.png") no-repeat;
+    cursor: pointer;
+}
+span.soutu-btn:hover {
+    background-position: 0 -20px;
+}
+.s_ipt {
+    position: relative;
+    width: 500px;
+    height: 22px;
+    margin: 6px 0 0 7px;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+.bg {
+    background-image: none;
+    width: auto;
+    height: auto;
+    border-bottom: 1px solid transparent;
+    display: inline-block;
+    background-position: -120px -48px;
+    z-index: 0;
+    vertical-align: top;
+    float: right;
+    margin-top: -36px;
+}
+/*百度一下按钮*/
+.btn {
+    background-image: url('../img/skin_dark_aab96bcc.png');
+    background-position: -206px 0;
+    width: 104px;
+    height: 36px;
+    line-height: 40px;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+    color: #000;
+    font-size: 16px;
+}
+.btn:hover,
+.btn:active {
+    background-color: #2d78f4;
+}
+/*Tag切换*/
+.main-page {
+    margin: 200px auto 0 auto;
+    width: 700px;
+    height: 100%;
+}
+.main-page .left,
+.main-page .right {
+    float: left;
+    height: 50px;
+}
+/*Tag上的导航*/
+.main-page .nav-back {
+    width: 740px;
+    height: 40px;
+    background: #000;
+    opacity: .3;
+    filter: alpha(opacity=30);
+}
+.main-page .nav {
+    position: relative;
+    margin-top: -37px;
+    width: 620px;
+    text-align: center;
+    font-size: 14px;
+    font-family: "微软雅黑";
+    color: #fff;
+    margin-left: 25px;
+}
+.main-page .nav div {
+    height: 32px;
+    line-height: 28px;
+    float: left;
+    margin-right: 25px;
+    cursor: pointer;
+}
+.main-page .nav div:hover {
+    background-color: rgba(171, 168, 168, 0.58);
+}
+.main-page .nav div.on {
+    background: #0094ea;
+}
+.main-page .right {
+    width: 620px;
+    height: 100%;
+    margin-top: -15px;
+}
+/*Tag切换内容*/
+.main-page .content-back {
+    width: 740px;
+    height: 100%;
+    background: #fff;
+    opacity: .3;
+}
+.main-page .content {
+    position: relative;
+    width: 720px;
+    height: 100%;
+    overflow: hidden;
+    border: rgba(134, 134, 134, 0.49) 10px solid;
+}
+.main-page .content div {
+    width: 720px;
+    height: 100%;
+    margin-bottom: 10px;
+    background: #fff;
+}
+/*Tag内容*/
+#content_0 {
+    display: block;
+}
+.content div {
+    display: none;
+}
+/*底部样式*/
+#foot {
+    text-align: center;
+    margin: 0 auto;
+    display: inline-block;
+    width: 100%;
+}
+#foot div {
+    overflow: hidden;
+    text-align: center;
+}
+#foot div a {
+    position: relative;
+    display: inline-block;
+    height: 34px;
+    width: 95px;
+    line-height: 34px;
+    color: #fff;
+    font-size: 13px;
+}
+#foot div a .icon-feedback {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../img/111.png) no-repeat;
+    background-size: 100% 100%;
+    vertical-align: middle;
+}
+#index-copyright,
+.recordcode {
+    display: block;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    padding: 6px 0 0;
+    color: #fff;
+}
+.recordcode {
+    height: 12px;
+    line-height: 12px;
+    padding: 6px 0 20px;
+}
+.recordcode i {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url(../img/jgwablogo.png) no-repeat;
+    background-size: 100% 100%;
+    margin-right: 5px;
+    vertical-align: top;
+}
+/*回到顶部按钮*/
+#btn_top {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: none;
+    zoom: 1;
+    vertical-align: baseline;
+    margin: 0 2px;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font: 14px/100% Arial, Helvetica, sans-serif;
+    padding: .5em 2em .55em;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+    -webkit-border-radius: .5em;
+    -moz-border-radius: .5em;
+    border-radius: .5em;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+}
+.button:hover {
+    text-decoration: none;
+}
+.button:active {
+    position: relative;
+    top: 1px;
+}

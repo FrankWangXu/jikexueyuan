@@ -1,0 +1,1333 @@
+*{
+	margin: 0;
+	padding: 0
+}
+body {
+    font: normal 12px Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, \5b8b\4f53, sans-serif;
+    color: #333;
+    text-alt: justify;
+    text-justify: inter-ideograph;
+    overflow-x: hidden;
+    background-color: #fff;
+}
+
+html {
+    background: #fff;
+}
+
+body,
+p,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+dt,
+dd,
+form,
+iframe,
+div,
+input {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+li,
+ol {
+    list-style: none outside none;
+}
+
+a {
+    padding: 0;
+    margin-left: 0;
+}
+
+a img {
+    border: none;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:focus {
+    color: #0c1d0d;
+}
+
+
+/*右下部悬浮窗口*/
+
+.fixed-right {
+    position: fixed;
+    width: 150px;
+    z-index: 2000;
+    right: -75px;
+    top: 75%;
+    transform: translate(0px, -50%);
+}
+
+.gotop {
+    width: 34px;
+    text-align: center;
+    z-index: 2000;
+    margin-top: 60px;
+    position: relative;
+    padding-top: 34px;
+}
+
+.gotop span {
+    cursor: pointer;
+}
+
+
+/*回到顶部按钮*/
+
+.gotop span.top {
+    position: absolute;
+    top: 0px;
+    display: block;
+    width: 34px;
+    height: 34px;
+    background: url("../images/gotop_d19051b.jpg") 0px 0px / 34px 103px no-repeat;
+}
+
+
+/*鼠标划过手机按钮出现的二维码图片*/
+
+.erwma {
+    position: absolute;
+    left: -126px;
+    top: -37px;
+    display: none;
+}
+
+.erwma img {
+    width: 126px;
+    height: 159px;
+}
+
+.appewm {
+    width: 126px;
+    height: 159px;
+    position: absolute;
+    z-index: 2100;
+    left: -126px;
+    top: -70px;
+    display: none;
+    background: url("../images/appewm_72cb766.png") 50% 50% / 100% no-repeat;
+}
+
+
+/*手机图片*/
+
+.gotop span.jk-app {
+    position: relative;
+    display: block;
+    width: 34px;
+    height: 35px;
+    background: url("../images/phone-1_b9a83cb.png") 50% 50% / 12px 24px no-repeat rgb(247, 247, 247);
+    border-bottom: 1px solid rgb(224, 224, 224);
+}
+
+
+/*调查图片*/
+
+.gotop a.diaocha {
+    display: block;
+    width: 34px;
+    height: 34px;
+    background: url("../images/gotop_d19051b.jpg") 0px -68px / 34px 101px no-repeat;
+}
+
+
+/*客服图片*/
+
+.gotop a.qq-online1 {
+    transition-duration: 1s;
+    position: relative;
+    display: block;
+    width: 34px;
+    height: 35px;
+    background: url("../images/kfu1_3dd1509.png") 50% 50% no-repeat rgb(247, 247, 247);
+    border-top: 1px solid rgb(224, 224, 224);
+}
+
+.gotop a.qq-online .kefu {
+    position: absolute;
+    color: rgb(51, 51, 51);
+    font-size: 12px;
+    text-align: center;
+    width: 180px;
+    left: -200px;
+    display: none;
+    padding: 5px;
+    background: rgb(247, 247, 247);
+}
+
+.gotop a.qq-online .kefu i {
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    right: -10px;
+    top: 12px;
+    border-top: 8px solid transparent;
+    border-left: 10px solid rgb(247, 247, 247);
+    border-bottom: 8px solid transparent;
+}
+/*头部导航栏*/
+#edge{
+	border-bottom: 1px solid #ececec;
+	height: 71px;
+}
+#header {
+    position: relative;
+    min-height: 70px;
+    padding: 0px;
+    height: 60px;
+    background: #fff;
+    width: 1000px;
+    margin: 0 auto;
+    clear: both;
+}
+#header .w-1000 {
+    width: 1000px;
+    margin: 0 auto;
+    height: 60px;
+    line-height: 60px;
+    position: relative;
+}
+#header img, #header ul, #header nav, #header div, #header span, #header a, #header i, #header h3 {
+    text-decoration: none;
+    padding: 0px;
+    margin: 0px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, \5b8b\4f53, sans-serif;
+}
+/*logo*/
+#header .logo {
+    width: 109px;
+    display: inline-block;
+    margin-right: 60px;
+    height: 60px;
+    float: left;
+    margin-top: 10px;
+}
+/*nav*/
+#header nav {
+    height: 60px;
+    display: inline-block;
+    float: left;
+    line-height: 60px;
+}
+#header nav li {
+    position: relative;
+    font-size: 14px;
+    display: inline-block;
+    margin-right: 50px;
+    cursor: pointer;
+    height: 60px;
+    float: left;
+}
+#header nav a {
+    color: #333;
+}
+#header nav a:hover {
+    color: rgb(53, 181, 88);
+}
+#header nav li:hover {
+    color: rgb(53, 181, 88);
+}
+.anim {
+	-webkit-animation:rotateOut .5s .2s ease both;
+    -moz-animation:rotateOut .5s .2s ease both;
+}
+@-webkit-keyframes rotateOut{
+	0%{-webkit-transform:rotate(-135deg);
+	opacity:1}
+	100%{-webkit-transform:rotate(45deg);
+	opacity:1}
+}
+@-moz-keyframes rotateOut{
+	0%{-moz-transform:rotate(-135deg);
+	opacity:1}
+	100%{-moz-transform:rotate(45deg);
+	opacity:1}
+}
+/*向下的小图标*/
+#header nav li i.arrow-icon {
+    margin-bottom: 2px;
+}
+#header nav li i {
+    margin-left: 5px;
+}
+.arrow-icon {
+	background-image: url("../images/down.png") no-repeat;
+    width: 8px;
+    height: 8px;
+    border-top: 1px solid #c1c1c1;
+    border-left: 1px solid #c1c1c1;
+    display: inline-block;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    transform-origin: 4px 4px;
+}
+/*职业学院下拉*/
+#header nav .submenu {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    top: 60px;
+    left: 0;
+    background: #fff;
+    font-size: 12px;
+    color: #666;
+    width: 280px;
+}
+#header nav .submenu h3 {
+    margin: 10px 0;
+    padding: 0 15px;
+    background: #fafafa;
+    height: 28px;
+    line-height: 28px;
+    font-weight: 300;
+}
+#header nav .submenu a {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 15px;
+}
+#header nav li i {
+    margin-left: 5px;
+}
+.vip-lesson .web-icon, .school-list .web-icon {
+    background-position: -15px -27px;
+}
+.vip-lesson i, .school-list i {
+    background: url("../images/allicon.png") 0 0 no-repeat;
+    background-size: 64px 64px;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    margin-right: 10px!important;
+}
+#header nav .submenu a {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 15px;
+}
+.school-list i.python-icon, .school-list i.go-icon, .school-list i.php-icon, .school-list i.java-icon, .school-list i.ios-icon, .school-list i.android-icon {
+    background: url("../images/allicon3.png") 0 0 no-repeat;
+    background-position: 0 0;
+    background-size: 16px 148px;
+}
+.school-list i.python-icon {
+    background-position: -2px -2px;
+}
+.school-list i.go-icon {
+    background-position: -2px -38px;
+}
+.school-list i.ios-icon {
+    background-position: -2px -82px;
+}
+/*会员课程下拉*/
+.green{
+	color: rgb(53, 181, 88);
+}
+#header nav .vip-lesson {
+    padding: 10px 0;
+}
+#header nav .vip-lesson a {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    color: #666;
+}
+#header nav .submenu:hover{
+	color: color: rgb(53, 181, 88);
+}
+.vip-lesson .kck-icon, .school-list .kck-icon {
+    background-position: 0 -13px;
+}
+#header nav .vip-lesson a span {
+    color: #bbb;
+    float: right;
+}
+.vip-lesson .zyljt-icon, .school-list .zyljt-icon {
+    background-position: -45px 0;
+}
+.vip-lesson .zstxt-icon, .school-list .zstxt-icon {
+    background-position: -30px -13px;
+}
+.vip-lesson .xlkc-icon, .school-list .xlkc-icon {
+    background: url("../images/xlkc2.png") 0 0 no-repeat;
+    background-position: 0 0;
+    background-size: 12px 12px;
+}
+.vip-lesson .kcbq-icon, .school-list .kcbq-icon {
+    background-position: -15px -13px;
+}
+.vip-lesson .vip-icon, .school-list .vip-icon {
+    background-position: -16px 0;
+}
+/*极客社区下拉*/
+.vip-lesson .jswd-icon, .school-list .jswd-icon {
+    background-position: 0 -27px;
+}
+.vip-lesson .wiki-icon, .school-list .wiki-icon {
+    background-position: -29px -27px;
+}
+.vip-lesson .sq-icon, .school-list .sq-icon {
+    background-position: 0 2px;
+}
+.vip-lesson .zygx-icon, .school-list .zygx-icon {
+    background-position: -30px 0;
+}
+/*右上角登录*/
+#header .icon-box {
+    float: right;
+    text-align: right;
+    width: 200px;
+    margin-right: 10px;
+    height: 60px;
+}
+#header .icon-box span {
+    height: 60px;
+    width: 17px;
+    display: inline-block;
+    margin-left: 25px;
+    cursor: pointer;
+}
+#header .relative {
+    position: relative;
+}
+.loginlist .submenu .top-icon {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    display: block;
+    position: absolute;
+    top: -8px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    border-top: 1px solid #ececec;
+    border-left: 1px solid #ececec;
+    display: inline-block;
+    background: #fff;
+}
+/*搜索图标*/
+#header .search-icon {
+    background: url("../images/search-icon.png") 0 0 no-repeat;
+    background-size: 17px 17px;
+    background-position: 0, 0;
+    height: 17px;
+    width: 17px;
+    display: inline-block;
+}
+/*app图标*/
+#header .icon-box .app-icon {
+    background: url("../images/app-icon.png") 0 0 no-repeat;
+    background-size: 17px;
+    background-position: 0;
+}
+#header .icon-box .app-icon .submenu {
+    padding: 0;
+    right: -50px;
+}
+#header .icon-box .app-icon .submenu .top-icon {
+    right: 50px;
+}
+#header .icon-box .app-icon .submenu img {
+    width: 100%;
+}
+/*登陆*/
+#header .icon-box .login-icon {
+    background: url("../images/login-icon.png") 0 0 no-repeat;
+    background-size: 17px;
+    background-position: 0;
+}
+.loginlist .submenu {
+    display: none; 
+    padding: 10px 0;
+    background: #fff;
+    position: absolute;
+    width: 120px;
+    z-index: 1200;
+    top: 58px;
+    right: -10px;
+}
+.loginlist .submenu dd {
+    text-align: left;
+    font-size: 12px;
+    line-height: 35px;
+    vertical-align: middle;
+    margin: 0;
+    padding-left: 10px;
+}
+.loginlist .submenu dd a {
+    color: #666;
+    height: 35px;
+    line-height: 35px;
+    display: block;
+}
+.submenu dd a:hover{
+	color:rgb(53, 181, 88);
+}
+.loginlist .submenu dd a.reg-btn, .loginlist .submenu dd a.login-btn {
+    width: 45%;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 10px;
+    display: inline-block;
+    text-align: center;
+}
+.login-btn{
+	float: right;
+}
+#header .loginlist dd i, #uservip-icon {
+    background: url("../images/allicon2.png") 0 0 no-repeat;
+    background-size: 64px 64px;
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+    display: inline-block;
+}
+#header .loginlist .xxzx-icon {
+    background-position: -16px -15px;
+}
+#header .loginlist .grzy-icon {
+    background-position: -45px -1px;
+}
+#header .loginlist .xxtz-icon {
+    background-position: -16px -30px;
+}
+#header .loginlist .zhsz-icon {
+    background-position: -30px -1px;
+}
+/*搜索框*/
+.scale {
+    transform-origin: right center;
+    -moz-transform-origin: right center;
+    display: block!important;
+    transform: scale(1, 1) !important;
+    opacity: 1!important;
+    animation: scalerun 0.8s ease normal;
+    -moz-animation: scalerun 2s line normal;
+    -webkit-animation: scalerun 0.8s ease normal;
+}
+#header .searchbox {
+    display: none;
+    transform: scale(0.1, 1);
+    -moz-transform: scale(0.1, 1);
+    opacity: 0;
+    height: 59px;
+    line-height: 59px;
+    width: 850px;
+    background: #fff;
+    position: absolute;
+    z-index: 11000;
+    top: 5px;
+    right: 0;
+}
+#header .searchbox .close-icon {
+    width: 15px;
+    height: 15px;
+    margin-top: 22px;
+    cursor: pointer;
+    background: url("../images/close-icon.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    right: 0;
+    z-index: 1200;
+}
+#header .searchbox input {
+    width: 400px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 10px;
+    font-size: 12px;
+    vertical-align: top;
+    margin-left: 10px;
+}
+#web_search_header {
+    border: none;
+    outline: none;
+}
+#header .searchbox .tagbox {
+    width: 300px;
+    text-align: right;
+    display: inline;
+    margin-right: 50px;
+    float: right;
+}
+#header .searchbox .tagbox a {
+    font-size: 12px;
+    color: #808080;
+    background: #f5f5f5;
+    padding: 3px 5px;
+    margin-left: 10px;
+}
+/*主体部分*/
+.mar-t20 {
+    margin-top: 20px!important;
+}
+.w-1000 {
+    width: 1000px;
+    margin: 0 auto;
+    clear: both;
+}
+/*<!-- 右边部分 -->*/
+
+
+
+/*<!-- 左边导航 -->*/
+#aside {
+    width: 211px;
+}
+.f_l {
+    float: left;
+}
+.aside-allCategory {
+    margin: 0;
+    border: 1px solid #35b558;
+    background-color: #fff;
+}
+.aside-allCategory>.hd {
+    height: 45px;
+    padding: 0 32px;
+    border-bottom: 1px solid #eee;
+    line-height: 45px;
+    cursor: default;
+}
+.aside-allCategory>.hd h2 {
+    position: relative;
+    font-size: 14px;
+    font-weight: 400;
+}
+.aside-allCategory>.hd h2 a {
+    color: #35b558;
+}
+.aside-allCategory>.hd .icon-course-curr {
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: url("../images/icon-course-curr_0743c98.png") no-repeat 0 0 / 15px 15px;
+    position: absolute;
+    margin-left: -20px;
+    margin-top: 14px;
+}
+.lesson-list ul {
+    width: 210px;
+    height: 371px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-color: #35b558;
+    border-bottom-color: rgb(228, 228, 228);
+    border-left-color: rgb(228, 228, 228);
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    border-top: none;
+}
+.lesson-list li > div {
+    width: 208px;
+    height: 37px;
+    line-height: 37px;
+    color: rgb(51, 51, 51);
+    font-size: 13px;
+    font-weight: 400;
+    cursor: pointer;
+    padding: 0px 15px;
+    border-bottom: 1px solid rgb(245, 245, 245);
+    background: url("../images/more-icon_d39346f.png") 186px 50% / 6px 10px no-repeat rgb(255, 255, 255);
+}
+.lesson-list a {
+    color: rgb(51, 51, 51);
+}
+.lesson-list a:hover{
+	color: #35b558;
+}
+.lesson-list .lesson-sec-list {
+    z-index: 100;
+    display: none;
+    position: relative;
+    left: 190px;
+    top: -38px;
+    padding-bottom: 30px;
+    width: 400px;
+    min-height: 373px;
+    box-shadow: rgba(0, 0, 0, 0.0980392) 1px 2px 4px;
+    border: 1px solid rgb(228, 228, 228);
+    border-left: none;
+    background: rgb(255, 255, 255);
+}
+.lesson-list dl {
+    margin: 0px 10px;
+}
+.lesson-list dt {
+    height: 37px;
+    line-height: 45px;
+    border-bottom: 1px solid rgb(245, 245, 245);
+}
+.lesson-list a {
+    color: rgb(51, 51, 51);
+}
+.lesson-list dd {
+    margin-left: -7px;
+    padding: 3px 0px;
+}
+.clear {
+    display: block;
+}
+.clear {
+    zoom: 1;
+    clear: both;
+    display: inline-block;
+}
+.lesson-list dd a:nth-child(1) {
+    border-left: none;
+}
+.lesson-list dd a {
+    display: inline-block;
+    float: left;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    height: 14px;
+    line-height: 14px;
+    color: rgb(102, 102, 102);
+    font-size: 12px;
+    font-weight: 400;
+    padding: 0px 7px;
+    border-left: 1px solid rgb(224, 224, 224);
+}
+.hdlist {
+    width: 100%;
+    background-color: #fff;
+}
+.hdlist li {
+    height: 45px;
+}
+.hdlist a {
+    display: block;
+    height: 45px;
+    width: 100%;
+    line-height: 45px;
+    color: #333;
+    font-size: 14px;
+    padding-left: 10px;
+}
+.hdlist a:hover{
+	color: #35b558;
+}
+.hdlist a .icon-zylj {
+    background: url("../images/icon-zylj_6ee6dac.png") no-repeat left center;
+    background-size: 15px 14px;
+}
+.hdlist a i {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+    vertical-align: text-bottom;
+}
+.hdlist a .icon-zstx {
+    background: url("../images/icon-zstx_a1ae096.png") no-repeat left center;
+    background-size: 15px 12.5px;
+}
+.hdlist a .icon-xlkc {
+    background: url("../images/icon-xlkc_2e47588.png") no-repeat left center;
+    background-size: 14px 14px;
+}
+.hdlist a .icon-kcbq {
+    background: url("../images/icon-kcbq_65534c2.png") no-repeat left center;
+    background-size: 15px 13px;
+}
+/*右边主要部分*/
+#main {
+    width: 789px;
+}
+.f_r {
+    float: right;
+}
+.listbox{
+    color: #666;
+    font-size: 12px;
+    line-height: 1.5;
+}
+/*二级菜单下拉*/
+.sort {
+    position: relative;
+    z-index: 500;
+}
+.sort>.wrap {
+    box-sizing: content-box;
+    height: 38px;
+    background: #fff;
+    color: gray;
+    line-height: 38px;
+}
+.sort .sortMode {
+    overflow: visible;
+    float: left;
+    height: 38px;
+}
+.sort .sortMode h3 {
+    float: left;
+    padding: 0 21px;
+    background: #fff;
+    border-right: 1px solid #f5f5f5;
+    font-size: 12px;
+    font-weight: 400;
+    cursor: default;
+}
+.sort .sortMode>dl {
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+    float: left;
+    height: 36px;
+    margin: 0 1px 0 -1px;
+    white-space: nowrap;
+}
+.sort .sortMode dt {
+    padding: 0 18px;
+    cursor: default;
+}
+.sort .sortMode dd {
+    position: relative;
+    z-index: 12;
+    -webkit-transition: all .1s ease .1s;
+    -moz-transition: all .1s ease .1s;
+    -ms-transition: all .1s ease .1s;
+    transition: all .1s ease .1s;
+    border: rgba(169, 169, 169, 0.42) 1px solid;
+    border-top-color: #fff;
+    background-color: #fff;
+}
+.sort .sortMode dd a {
+    display: block;
+    padding: 0 32px 0 17px;
+    font-weight: 500;
+    color: gray;
+}
+/*列表转换*/
+.sort .previewMode {
+    float: right;
+}
+.previewMode li.curr, .previewMode li:hover {
+    background: #fff;
+}
+.previewMode li {
+    position: relative;
+    float: left;
+    width: 36px;
+    height: 38px;
+    border-left: 1px solid #f5f5f5;
+    line-height: 36px;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition: background-color .2s;
+    -moz-transition: background-color .2s;
+    -ms-transition: background-color .2s;
+    transition: background-color .2s;
+}
+.previewMode li .icon {
+    position: relative;
+    top: -1px;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+}
+.previewMode li.kuai-icon .icon {
+    width: 14px;
+    background: url('../images/icon-kuai_3c1a8cf.png') no-repeat 0 0;
+    background-size: 14px;
+}
+.previewMode li.list-icon .icon {
+    width: 19px;
+    background: url('../images/icon-list_6d9f87f.png') no-repeat center;
+    background-size: 16px 12px;
+}
+/*课程列表*/
+.lesson-li{
+	margin-left: 14px;
+}
+.lesson-list2{
+	margin-left: 14px;
+}
+.lesson-li ul{
+	width: auto;
+	margin-top: 15px;
+	margin-left: 10px;
+}
+.lesson-li li {
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    width: 235px;
+    height: 220px;
+}
+.lessonimg-box {
+    position: relative;
+    width: 235px;
+    border: 1px solid rgb(228, 228, 228);
+    border-bottom: none;
+}
+.lessonimg-box img {
+    width: 100%;
+    height: 130px;
+}
+.lessonimg-box i.playericon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -25px;
+    margin-top: -25px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    background: url("../images/player_icon_5c67475.png") 0px 0px / 50px 50px no-repeat;
+    transition: 1s;
+}
+.lesson-infor {
+    position: relative;
+    height: 88px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-color: rgb(228, 228, 228);
+    border-bottom-color: rgb(228, 228, 228);
+    border-left-color: rgb(228, 228, 228);
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    padding: 10px;
+    border-top: none;
+    background: rgb(255, 255, 255);
+    z-index: 100;
+}
+.lesson-infor h2 {
+    margin-bottom: 12px;
+    height: 36px;
+    font-size: 14px;
+    color: rgb(51, 51, 51);
+    line-height: 18px;
+}
+.lesson-infor p {
+    display: none;
+    margin-bottom: 10px;
+    height: 52px;
+    line-height: 18px;
+    font-size: 12px;
+    color: grey;
+    overflow: hidden;
+}
+.lesson-infor .timeandicon {
+    position: relative;
+    color: grey;
+}
+.lesson-infor dl dd:nth-child(1) {
+    margin-bottom: 8px;
+}
+.lesson-infor .time-icon {
+    display: block;
+    float: left;
+    margin-right: 8px;
+    width: 14px;
+    height: 14px;
+    background: url("../images/clok_a413ecf.png") 0px 0px / 14px 14px no-repeat;
+}
+.lesson-infor em {
+    font-style: normal;
+}
+.lesson-infor .zhongji {
+    display: none;
+}
+.lesson-infor .xinhao-icon2 {
+    display: block;
+    float: left;
+    margin-right: 8px;
+    width: 14px;
+    height: 14px;
+    background: url("../images/tow-ji_ec2b553.png") 0px 0px / 14px 14px no-repeat;
+}
+.lesson-infor .learn-namber {
+    display: none;
+    text-align: right;
+}
+.lesson-infor .lessonicon-box {
+    position: absolute;
+    right: 0px;
+    bottom: 6px;
+    text-align: right;
+}
+.lesson-infor .lessonicon-box img {
+    display: block;
+    width: 16px;
+    height: 16px;
+}
+.lesson-list2 ul li {
+    height: 100px;
+    padding: 0;
+    background-color: #fff;
+    margin-top: 13px;
+}
+.lesson-list2 .lessonimg-box {
+    width: 185px;
+    height: 100px;
+    float: left;
+    margin-right: 15px;
+    position: relative;
+    margin-top: 20px;
+}
+.lesson-list2 .lessonimg-box img {
+    width: 185px;
+    height: 100px;
+}
+.lesson-list2 i .playericon {
+    position: absolute;
+    z-index: 120;
+    width: 50px;
+    height: 50px;
+    display: block;
+    left: 50%;
+    margin-left: -25px;
+    top: 50%;
+    margin-top: -25px;
+    background: url("../images/player_icon_5c67475.png") no-repeat;
+    background-size: 50px 50px;
+    cursor: pointer;
+}
+
+.lesson-list2 .lesson-infor {
+    position: relative;
+    height: 126px!important;
+    width: 566px;
+    float: left;
+    border: none;
+}
+.lesson-list2 .lesson-infor .lesson-info-h2, .lesson-list2 .lesson-infor h5 {
+    font-size: 14px;
+    color: #333;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+.lesson-list2 .lesson-infor p {
+    color: gray;
+    font-size: 12px;
+    opacity: 1!important;
+    line-height: 18px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    height: 36px!important;
+    display: block!important;
+}
+.lesson-list2 .lesson-infor .lessonicon-box {
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: -75px;
+}
+/*<!-- 页数 -->*/
+#page-nav {
+    text-align: center;
+    margin-top: 17px;
+    height: 28px;
+}
+ul.pages {
+    display: block;
+    border: 0;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin: 10px 0px 45px;
+    padding: 0;
+}
+ul.pages li {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border: 0;
+    margin-left: 5px;
+    line-height: 30px;
+    border: 1px solid #fff;
+    text-align: center;
+    font-size: 12px;
+    background: #fff;
+    color: gray;
+    border: 1px solid #e4e4e4;
+    cursor: pointer;
+}
+ul.pages li.pgNext {
+    width: 50px;
+}
+ul.pages li.pgEmpty {
+    border: 1px solid #f0f0f0;
+    color: #d9d6c3;
+    width: 50px;
+    cursor: default;
+}
+ul.pages li.pgCurrent {
+    background: #35b558;
+    color: #fff;
+    border: 1px solid #35B558;
+}
+ul.pages li.thpoint {
+    border: 0;
+    cursor: auto;
+    color: #000;
+    background: none!important;
+    margin-top: 3px;
+}
+ul.pages li.pgNext {
+    width: 50px;
+}
+ul.pages li.pagetotal {
+    width: 70px;
+}
+ul.pages li.thpoint {
+    border: 0;
+    cursor: auto;
+    color: #000;
+    background: none!important;
+    margin-top: 3px;
+}
+ul.pages li.pagenow {
+    width: 100px;
+}
+#page-nav input {
+    width: 35px!important;
+    height: 22px!important;
+    background: #fff;
+    border: 1px solid #e4e4e4;
+    color: #666;
+    line-height: 22px;
+    margin: 0 10px;
+    vertical-align: middle;
+    margin-top: -3px;
+    padding-top: 2px;
+    padding-left: 10px;
+}
+ul.pages li.go {
+    width: 32px;
+    height: 22px;
+    line-height: 22px;
+    margin-top: 6px;
+}
+.page-number:hover{
+	border:1px solid #35B558;
+	color: #35B558;
+}
+.pgNext:hover{
+	border:1px solid #35B558;
+	color: #35B558;
+}
+.lesson-li li:hover .playericon{
+	opacity: 1;
+}
+.lesson-list2 li:hover .playericon{
+	opacity: 1;
+}
+/*底部*/
+#footer {
+    min-width: 1000px;
+    margin: 0 auto;
+    clear: both;
+}
+.mar-t50 {
+    padding-top: 50px;
+}
+#footer .jkinfor-block {
+    background: rgb(250, 250, 250);
+    border-top: 1px solid rgb(228, 228, 228);
+    border-bottom: 1px solid rgb(228, 228, 228);
+}
+#footer .jkinfor {
+    width: 1000px;
+    min-height: 245px;
+    margin: 0px auto;
+}
+.cf {
+    zoom: 1;
+}
+#footer .jkinfor dl {
+    width: 185px;
+    padding-left: 30px;
+    color: grey;
+    float: left;
+    min-height: 175px;
+    margin: 25px 0px;
+    border-left: 1px solid rgb(228, 228, 228);
+}
+#footer .jkinfor dl dt {
+    font-size: 14px;
+    color: rgb(102, 102, 102);
+    font-weight: 500;
+}
+#footer .jkinfor a {
+    color: grey;
+    padding-left: 5px;
+}
+#footer .jkinfor a:hover{
+	color: #35b558;
+}
+#footer .jkinfor dl dd {
+    font-size: 12px;
+    margin-top: 10px;
+}
+#footer .search-share {
+    width: 260px;
+    float: left;
+    min-height: 226px;
+    border-left: 1px solid rgb(228, 228, 228);
+    padding: 20px 0px 0px 40px;
+}
+#footer .search-share .jktxt {
+    font-size: 15px;
+    color: rgb(53, 181, 88);
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+#footer .search-share .app-download a {
+    padding-left: 0px;
+}
+#footer .search-share .app-download img {
+    display: block;
+    float: left;
+    margin-right: 15px;
+    width: 21px;
+}
+#footer .search-share .app-download strong {
+    font-size: 18px;
+    color: rgb(102, 102, 102);
+    margin-bottom: 8px;
+}
+#footer .search-share .app-download p {
+    font-size: 14px;
+    color: grey;
+    margin-left: 36px;
+}
+#footer .search-share .app-download p .jt {
+    width: 8px;
+    height: 8px;
+    margin-left: 3px;
+    display: inline-block;
+    transform: rotate(45deg);
+    border: 1px solid rgb(166, 166, 166);
+    border-left: transparent;
+    border-bottom: transparent;
+}
+#footer .search-share .app-download:hover{
+	color: #35b558!important;
+}
+#footer .search-share .share {
+    margin-top: 15px;
+    clear: both;
+    display: table;
+}
+#footer .search-share .share a.sina-icon {
+    background-position: -23px 0px;
+}
+#footer .search-share .share a.sina-icon:hover{
+	background-position: -23px -39px;
+}
+#footer .search-share .share a {
+    width: 32px;
+    height: 32px;
+    box-sizing: border-box;
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+    position: relative;
+    background: url("../images/icon.png") no-repeat;
+}
+#footer .search-share .share a.tieba-icon {
+    background-position: -145px 0px;
+}
+#footer .search-share .share a.tieba-icon:hover{
+	background-position: -145px -39px;
+}
+#footer .search-share .share a.weixin-icon {
+    background-position: -23px -82px;
+}
+#footer .search-share .share a.weixin-icon:hover{
+	background-position: -23px -121px;
+}
+#footer .search-share .share a.weixin-icon .weinxinpop {
+    position: absolute;
+    bottom: 32px;
+    left: -48px;
+    z-index: 200;
+    display: none;
+}
+#footer .kefu-online {
+    padding-left: 35px;
+    margin-top: 15px;
+}
+#footer .kefu-online .kefu-icon {
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin-left: -40px;
+    background: url("../images/kefu.png") 0px 0px / 80px 40px no-repeat;
+}
+#footer .kefu-online h5 {
+    color: rgb(102, 102, 102);
+    font-size: 14px;
+    margin-top: -15px;
+    margin-bottom: 2px;
+    line-height: 22px;
+    padding-left: 5px;
+}
+#footer .kefu-online p {
+    color: grey;
+    font-size: 12px;
+    padding-left: 5px;
+}
+#footer .kefu-online:hover{
+	color: #35b558!important;
+}
+#footer .copyright {
+    font-size: 12px;
+    color: rgb(153, 153, 153);
+    width: 1000px;
+    text-align: center;
+    margin: 0px auto;
+    padding: 20px;
+}
+#footer .copyright a {
+    color: rgb(153, 153, 153);
+    font-weight: 500;
+}

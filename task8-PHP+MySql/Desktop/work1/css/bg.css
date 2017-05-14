@@ -1,0 +1,348 @@
+body {
+    background-attachment: fixed;
+    cursor: default;
+    font-family: arial, sans-serif;
+    font-size: small;
+    margin: 0;
+    overflow-x: hidden;
+    text-decoration: none;
+}
+/*登陆页面*/
+.login-page{
+	width: 1003px;
+    margin: 0 auto;
+    position: relative;
+    text-align:center; 
+}
+/*登录窗口*/
+.login-window{
+	-webkit-user-select: none;
+    margin-top: 64px;
+    text-align: -webkit-center;
+}
+/*标题*/
+.login-title{
+	color: #2932E1;
+	font-size: 30px;
+	margin-top: 10px;
+    margin-bottom: 20px;
+}
+/*头像*/
+.head-pic{
+	display: inline-block;
+    width: 137px;
+    height: 46px;
+}
+/*用户名*/
+.bold{
+	font-size: 30px;
+}
+.login-accout,.login-password{
+    line-height:normal;
+    font-family:"Microsoft YaHei",Tahoma,Verdana,SimSun;
+    font-style:normal;
+    font-variant:normal;
+    font-size-adjust:none;
+    font-stretch:normal;
+    font-weight:normal;
+    margin-top:0px;
+    margin-bottom:0px;
+    margin-left:0px;
+    padding-top:4px;
+    padding-right:4px;
+    padding-bottom:4px;
+    padding-left:4px;
+    font-size:20px;
+    outline-width:medium;
+    outline-style:none;
+    outline-color:invert;
+    border-top-left-radius:3px;
+    border-top-right-radius:3px;
+    border-bottom-left-radius:3px;
+    border-bottom-right-radius:3px;
+    text-shadow:0px 1px 2px #fff;
+    background-attachment:scroll;
+    background-repeat:repeat-x;
+    background-position-x:left;
+    background-position-y:top;
+    background-size:auto;
+    background-origin:padding-box;
+    background-clip:border-box;
+    background-color:rgb(255,255,255)!important;
+    margin-right:8px;
+    border-top-color:#ccc;
+    border-right-color:#ccc;
+    border-bottom-color:#ccc;
+    border-left-color:#ccc;
+    border-top-width:1px;
+    border-right-width:1px;
+    border-bottom-width:1px;
+    border-left-width:1px;
+    border-top-style:solid;
+    border-right-style:solid;
+    border-bottom-style:solid;
+    border-left-style:solid;
+}
+.login-accout:focus ,.login-password:focus{
+     border: 1px solid #fafafa;
+    -webkit-box-shadow: 0px 0px 6px #007eff;
+     -moz-box-shadow: 0px 0px 5px #007eff;
+     box-shadow: 0px 0px 5px #007eff;   
+    
+}
+/*登录按钮*/
+.login-btn{
+	width:143px;
+	height:40px;
+	background:url("../images/bg/bg12.jpg") no-repeat left top;
+	color:#FFF;
+	margin-top: 20px;
+    font-size: 18px;
+}
+.login-btn:active{
+	background-position: 0 -45px;
+}
+/*<!-- end登录页面 -->*/
+
+/*头部*/
+.header{
+	width: 100%;
+    height: 48px;
+    position: relative;
+}
+/*头部左侧*/
+.head-left{
+	height: 48px;
+	float: left;
+}
+.logo{
+	height: 48px;
+	width: auto;
+	margin: 10px 5px 0 10px;
+}
+.head-title{
+	color: #E10602;
+	font-family:"黑体";
+	font-size:30px;
+}
+/*<!-- end头部左侧 -->*/
+		/*<!-- 头部右侧 -->*/
+.head-right{
+	float: right;
+	height: 48px;
+}
+.account-area{
+    color: #060606;
+    font-family: "黑体";
+    font-size: 20px;
+    display: inline;
+}
+.quit-btn{
+	display: inline-block;
+}
+.quit{
+    height: 25px;
+    width: auto;
+    margin: 40px 5px 0 10px;
+}
+	/*<!-- end头部 -->*/
+	/*<!-- 主要部分 -->*/
+.main{
+	margin: 10px;
+}
+/*侧边栏*/
+.sidebar{
+	float: left;
+    width: 105px;
+    height: 630px;
+    background-color: #13BEEC;
+    border: 1px solid #fff;
+}
+.news-type{
+	margin-bottom: 5px;
+	color: #fff;
+	font-size: 24px;
+	height: 24px;
+	text-decoration: none;
+	padding: 5px;
+}
+.icon-warp{
+	margin: 5px;
+}
+.type-icon{
+	height: 24px;
+	width: 24px;
+	float: left;
+}
+.type-text{
+	font-family: "黑体";
+    font-size: 20px;
+    margin: 5px;
+}
+.news-type-active{
+	color: rgba(41, 50, 225, 1);
+}
+/*内容*/
+.content-news-type{
+	font-size: 20px;
+    margin-left: 5px;
+    display: inline-block;
+    width: 120px;
+    height: 33px;
+    margin: 14px;
+}
+/*添加新闻按钮*/
+.add-btn{
+	display: inline-block;
+	background:url("../images/bg/Add.png");
+	background-size:25px 25px;
+    width: 25px;
+    height: 25px;
+}
+.content-head{
+	border: 1px solid #13BEEC;
+    font-size: 20px;
+    height: 40px;
+    width: 100%;
+    line-height: 40px;
+}
+.ch-id{
+	margin: 0px 15px;
+	display: inline-block;
+}
+.ch-title{
+	width: 15%;
+    text-align: center;
+	display: inline-block;
+}
+.ch-label{
+	width: 5%;
+    text-align: center;
+	display: inline-block;
+}
+.ch-pic{
+	width: 20%;
+    text-align: center;
+	display: inline-block;
+}
+.ch-content{
+	width: 20%;
+    text-align: center;
+	display: inline-block;
+}
+.ch-date{
+	width: 5%;
+    text-align: center;
+	display: inline-block;
+}
+.ch-other{
+	width: 10%;
+    text-align: center;
+	display: inline-block;
+}
+.content-box{
+	font-size: 20px;
+    height: 40px;
+    width: 100%;
+    line-height: 40px;
+}
+/*面板*/
+.news-panel{
+	display: none;
+	width: 70%;
+	height: 30%;
+	margin: auto;
+  	position: absolute;
+  	top: 0; left: 0; bottom: 0; right: 0;
+  	font-size: 25px;
+  	-webkit-box-shadow:inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #032b3a, 1px 1px 0px 0px #044a64, 2px 2px 0px 0px #044a64, 2px 5px 0px 0px #044a64, 6px 4px 2px #0b698b, 0px 10px 5px #999 ;
+	-moz-box-shadow:inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #032b3a, 1px 1px 0px 0px #044a64, 2px 2px 0px 0px #044a64, 2px 5px 0px 0px #044a64, 6px 4px 2px #0b698b, 0px 10px 5px #999 ;
+	-o-box-shadow:inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #032b3a, 1px 1px 0px 0px #044a64, 2px 2px 0px 0px #044a64, 2px 5px 0px 0px #044a64, 6px 4px 2px #0b698b, 0px 10px 5px #999 ;
+	box-shadow:inset 0px 1px 0px #ffffff, 0px 5px 0px 0px #032b3a, 1px 1px 0px 0px #044a64, 2px 2px 0px 0px #044a64, 2px 5px 0px 0px #044a64, 6px 4px 2px #0b698b, 0px 10px 5px #fff;
+}
+.closePanel{
+	display: inline-block;
+	background:url("../images/bg/Delete.png");
+	background-size:25px 25px;
+    width: 25px;
+    height: 25px;
+    float: right;
+    margin-right: 5px;
+}
+.news-panel form{
+	margin: auto;
+	position: absolute;
+  	top: 0; left: 0; bottom: 0; right: 0;
+}
+.news-panel input{
+	width: 70%;
+    height: 25px;
+    margin: 5px;
+}
+.news-panel textarea{
+	width: 70%;
+    height: 140px;
+    margin-bottom: 5px;
+}
+.save-btn {
+	margin-right: 5px;
+	float: right;
+	background-color:#3bb3e0;
+	font-family: 'Open Sans', sans-serif;
+	font-size:12px;
+	text-decoration:none;
+	color:#fff;
+	position:relative;
+	padding:10px 20px;
+	border-left:solid 1px #2ab7ec;
+	margin-left:35px;
+	background-image: linear-gradient(bottom, rgb(44,160,202) 0%, rgb(62,184,229) 100%);
+	background-image: -o-linear-gradient(bottom, rgb(44,160,202) 0%, rgb(62,184,229) 100%);
+	background-image: -moz-linear-gradient(bottom, rgb(44,160,202) 0%, rgb(62,184,229) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgb(44,160,202) 0%, rgb(62,184,229) 100%);
+	background-image: -ms-linear-gradient(bottom, rgb(44,160,202) 0%, rgb(62,184,229) 100%);
+	background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0, rgb(44,160,202)),
+	color-stop(1, rgb(62,184,229))
+	);
+	-webkit-border-top-right-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	-moz-border-radius-bottomright: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	-webkit-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
+	-moz-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
+	-o-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
+	box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
+}
+
+.save-btn:active {
+	top:3px;
+	background-image: linear-gradient(bottom, rgb(62,184,229) 0%, rgb(44,160,202) 100%);
+	background-image: -o-linear-gradient(bottom, rgb(62,184,229) 0%, rgb(44,160,202) 100%);
+	background-image: -moz-linear-gradient(bottom, rgb(62,184,229) 0%, rgb(44,160,202) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgb(62,184,229) 0%, rgb(44,160,202) 100%);
+	background-image: -ms-linear-gradient(bottom, rgb(62,184,229) 0%, rgb(44,160,202) 100%);
+	background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0, rgb(62,184,229)),
+	color-stop(1, rgb(44,160,202))
+	);
+	-webkit-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #156785, 0px 5px 3px #999;
+	-moz-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #156785, 0px 5px 3px #999;
+	-o-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #156785, 0px 5px 3px #999;
+	box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #156785, 0px 5px 3px #999;
+}
+.save-btn:active::before {
+	top:-3px;
+	-webkit-box-shadow:inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #032b3a, 1px 1px 0px 0px #044a64, 2px 2px 0px 0px #044a64, 2px 5px 0px 0px #044a64, 6px 4px 2px #0b698b, 0px 10px 5px #999 ;
+	-moz-box-shadow:inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #032b3a, 1px 1px 0px 0px #044a64, 2px 2px 0px 0px #044a64, 2px 5px 0px 0px #044a64, 6px 4px 2px #0b698b, 0px 10px 5px #999 ;
+	-o-box-shadow:inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #032b3a, 1px 1px 0px 0px #044a64, 2px 2px 0px 0px #044a64, 2px 5px 0px 0px #044a64, 6px 4px 2px #0b698b, 0px 10px 5px #999 ;
+	box-shadow:inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #032b3a, 1px 1px 0px 0px #044a64, 2px 2px 0px 0px #044a64, 2px 5px 0px 0px #044a64, 6px 4px 2px #0b698b, 0px 10px 5px #999 ;
+}
