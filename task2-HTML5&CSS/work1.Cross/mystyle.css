@@ -1,0 +1,40 @@
+div {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    border: 2px solid yellow;
+}
+
+#d1 {
+    margin: -150px 0px 0px -50px;
+    background-color: #FFEB3B;
+}
+
+[id ^=d2] {
+    margin: -50px 0px 0px -50px;
+    background-color: #FFC107;
+}
+
+#d2_1 {
+    margin-left: -150px;
+    background-color: #FF9800;
+}
+
+#d2_2 {
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 100px;
+    text-align: center;
+}
+
+#d2_3 {
+    margin-left: 50px;
+    background-color: #FF5722;
+}
+
+#d3 {
+    margin: 50px 0px 0px -50px;
+    background-color: #F44336;
+}

@@ -1,0 +1,57 @@
+    body {
+        margin: 0px;
+        padding: 0px;
+        background-color: #ffffff;
+        background-image: url('http://www.qdjj.net/images/beijing.gif');
+        color: #000000;
+    }
+    .container{
+        border-radius: 30px;
+        width: 730px;
+        margin: 10px auto;
+        background-color: #fff;
+        font-size: 12px;
+        color: #333;
+        padding-left: 40px;
+        padding-right: 40px; 
+
+    }
+
+    label {
+        display: inline-block;
+    }
+    
+    .logo {
+        width: 220px;
+        height: 72px;
+    }
+    
+    .type1 {
+        text-align: center;
+    }
+    
+    .red {
+        color: #F00;
+    }
+    
+    .section {
+        font-weight: bold;
+        color: #00F;
+    }
+    
+    .right {
+        text-align: right;
+    }
+    
+    .blue {
+        color: #06F;
+    }
+    
+    .titleinfo {
+        font-weight: bold;
+        font-size: 18px;
+        background-color: white;
+    }
+    .copyright{
+        text-align: center;
+    }
