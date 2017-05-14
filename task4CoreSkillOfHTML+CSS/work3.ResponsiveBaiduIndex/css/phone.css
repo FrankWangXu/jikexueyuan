@@ -1,0 +1,470 @@
+body {
+    background: #eeeff0;
+    height: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    -webkit-text-size-adjust: none;
+    overflow-x: hidden;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+div,
+ol,
+ul,
+input,
+button {
+    margin: 0;
+    padding: 0;
+}
+
+.sp,
+.s-topmenu,
+.s_form,
+.s_logo,
+.s-search-area,
+.wrapper,
+.s_index_body {
+    display: none!important;
+}
+
+
+/*header*/
+
+#weather {
+    position: relative;
+    height: 0;
+}
+
+#weather {
+    -webkit-transition: height .3s linear;
+    text-align: left;
+}
+
+#weather {
+    text-align: left;
+}
+
+.weather-outline {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 0 6px;
+    height: 40px;
+    line-height: 40px;
+}
+
+#index-card [class^="icon-"],
+#index-card [class*=" icon-"],
+#index-view [class^="icon-"],
+#index-view [class*=" icon-"] {
+    font-family: icons;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: .2px;
+}
+
+.weather-outline > *,
+.weather-detail-sky > * {
+    display: inline-block;
+}
+
+.icon-weather-default {
+    color: #b7babe;
+    font-size: 28px;
+    position: relative;
+    top: 3px;
+    width: auto;
+    line-height: 35px;
+    margin-left: -1px;
+}
+
+.weather-outline > div.weather-num {
+    font-size: 20px;
+    color: #8c8c8c;
+    padding-left: 2px;
+}
+
+.weather-outline > *,
+.weather-detail-sky > * {
+    display: inline-block;
+}
+
+.weather-status {
+    position: relative;
+    padding: 0 2px 0 7px;
+    top: 3px;
+}
+
+.weather-status p {
+    height: 13px;
+    line-height: 13px;
+    font-size: 11px;
+    color: #999;
+}
+
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+.weather-shield {
+    position: absolute;
+    width: 100%;
+    background-color: #eeeff0;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+    z-index: -1;
+}
+
+.icon-down img {
+    vertical-align: bottom;
+}
+
+.s-topmenu1 {
+    font-size: 16px;
+    color: #505050;
+    height: 45px;
+    line-height: 30px;
+}
+
+.s-topmenu1 .s-rmenu-icon {
+    margin-right: 0;
+}
+
+.s-topmenu1 .s-rmenu {
+    float: right;
+    margin-right: 6px;
+}
+
+.s-topmenu1 .s-rmenu-icon .menu {
+    height: 52px;
+    margin-right: 0;
+}
+
+.s-topmenu1 .menu {
+    float: right;
+    width: 60px;
+    height: 45px;
+    margin-right: 6px;
+    text-align: center;
+    position: relative;
+}
+
+.s-rmenu-icon .s-tmenu-setting .setting-top,
+.s-rmenu-icon .s-tmenu-login .login-top,
+.s-rmenu-icon .s-tmenu-username .username-top {
+    margin: 11px 5px 10px;
+}
+
+.s-rmenu-icon .login-top {
+    background-position: 5px center!important;
+}
+
+.s-rmenu-icon .setting-top,
+.s-rmenu-icon .login-top,
+.s-tmenu-nav .sidenav-top {
+    text-indent: -9999em;
+    background: url(../img/icon_menu_b0b60d01.png) 0 0 no-repeat;
+    background-size: 200px auto;
+}
+
+.s-tmenu-setting .setting-top,
+.s-tmenu-login .login-top {
+    width: 50px;
+    height: 30px;
+    margin: 8px 5px;
+}
+
+.s-rmenu-icon .s-tmenu-setting {
+    padding-left: 0;
+}
+
+.s-rmenu-icon .setting-top {
+    background-position: -50px center;
+}
+
+.s-rmenu-icon .s-tmenu-nav {
+    display: block;
+}
+
+.s-rmenu .s-tmenu-nav {
+    float: right;
+    width: 60px;
+    height: 45px;
+    height: 52px;
+    text-align: center;
+    position: relative;
+}
+
+.s-tmenu-nav .sidenav-top {
+    position: relative;
+    height: 100%;
+    background-position: -100px center;
+    z-index: 2;
+}
+
+.s-tmenu-nav .sidenav-top .icon-tips {
+    position: absolute;
+    top: 4px;
+    left: 24px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    color: #f00;
+    font-size: 20px;
+    text-indent: 0;
+}
+
+
+/*logo*/
+
+#logo {
+    height: 55px;
+    padding: 17px 0 15px;
+}
+
+.noTapColor {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+#index-form {
+    margin: 0 10px;
+    height: 42px;
+    background: #fff;
+    border: 1px solid #949494;
+    border-bottom-color: #bcbcbc;
+}
+
+#index-form .con-wrap {
+    display: -moz-box;
+    display: -webkit-box;
+    display: box;
+    width: 100%;
+}
+
+#index-card .se-input {
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    margin: 0;
+    padding: 7px 42px 7px 6px;
+    height: 42px;
+    line-height: 28px;
+    resize: none;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#index-card .se-input,
+#index-card .se-encode {
+    display: block;
+    -moz-box-flex: 1;
+    -webkit-box-flex: 1;
+    box-flex: 1;
+    margin: 2px 0;
+    padding: 6px 35px 6px 6px;
+    font-size: 18px;
+    line-height: 24px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.adjust-input {
+    position: relative;
+    margin: 0 -74px 0 0;
+    line-height: 29px;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+input,
+button,
+textarea {
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    -webkit-appearance: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#index-card .se-inner {
+    width: 82px;
+    position: relative;
+}
+
+#index-cross {
+    position: absolute;
+    top: 0;
+    left: -35px;
+    width: 35px;
+    height: 42px;
+    display: none;
+    background: url(../img/clear.png) no-repeat center;
+    -webkit-background-size: 16px;
+    background-size: 16px;
+    z-index: 2;
+}
+
+.callicon-wrap {
+    position: absolute;
+    top: 0;
+    left: -38px;
+    z-index: 10;
+}
+
+.baiduapp-icon {
+    width: 39px;
+    height: 39px;
+    text-align: left;
+}
+
+.baiduapp-icon img {
+    position: absolute;
+    top: 138px;
+    right: -865px;
+    width: 20px;
+    height: 31px;
+}
+
+#index-bn {
+    position: absolute;
+    top: 130px;
+    right: -1px;
+    width: 82px;
+    height: 38px;
+    background: #38f;
+    color: #fff;
+    white-space: nowrap;
+    line-height: 42px;
+    letter-spacing: -1px;
+    font-size: 16px;
+    border-top: 1px solid #38f;
+    border-bottom: 1px solid #38f;
+    box-sizing: inherit;
+}
+
+button {
+    outline: none;
+}
+
+input,
+textarea,
+keygen,
+select,
+button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em 0em 0em 0em;
+    font: 13.3333px Arial;
+}
+
+button {
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    color: buttontext;
+    background-color: buttonface;
+    box-sizing: border-box;
+    padding: 2px 6px 3px;
+    border: 2px outset buttonface;
+}
+#navs {
+    margin: 17px 0 14px;
+    overflow: hidden;
+}
+#navs a:first-child, #navs a:nth-child(7) {
+    margin-left: 2%;
+}
+#navs a {
+    float: left;
+    width: 16%;
+    font-size: 12px;
+    color: #666;
+}
+a {
+    text-decoration: none;
+}
+#navs a i {
+    display: block;
+    margin-bottom: 4px;
+    height: 24px;
+}
+.img1{
+    width: 20px;
+    height: 27px;
+}
+#admin {
+    padding: 0 8px;
+    line-height: 45px;
+    height: 45px;
+    color: #333;
+    font-size: 14px;
+    text-indent: -8px;
+    background: #fff;
+    background-clip: content-box;
+}
+#foot {
+    margin: 10px 28px 0;
+}
+#foot div {
+    overflow: hidden;
+    text-align: center;
+}
+#foot div a {
+    position: relative;
+    display: inline-block;
+    height: 34px;
+    width: 95px;
+    line-height: 34px;
+    color: #666;
+    font-size: 13px;
+}
+#foot div a .icon-feedback {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../img/111.png) no-repeat;
+    background-size: 100% 100%;
+    vertical-align: middle;
+}
+#index-copyright, .recordcode {
+    display: block;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    padding: 6px 0 0;
+    color: #999;
+}
+
+.recordcode {
+    height: 12px;
+    line-height: 12px;
+    padding: 6px 0 20px;
+}
+.recordcode i {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url(../img/jgwablogo.png) no-repeat;
+    background-size: 100% 100%;
+    margin-right: 5px;
+    vertical-align: top;
+}

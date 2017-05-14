@@ -1,0 +1,39 @@
+@media (min-width: 768px) {
+    #slider_sub {
+        width: 250px;
+        margin-top: -20px;
+        position: absolute;
+        z-index: 1;
+        height: 600px;
+        background:rgba(0, 208, 255, 0.5);
+    }
+    .mysearch{
+    	margin: 10px 0!important;
+    }
+    .wang3{
+    	margin-left: 255px!important;
+    }
+}
+body{
+	background:-webkit-gradient(linear, 0 0, 0 bottom,  from(rgba(255, 193, 7, 0.44)), to(rgba(0, 208, 255, 0.5)))!important; 
+	background:rgba(255, 193, 7, 0.44); /* 一些不支持背景渐变的浏览器 */  
+    background:-moz-linear-gradient(top, rgba(255, 193, 7, 0.44), rgba(0, 208, 255, 0.5))!important;  
+    background:-o-linear-gradient(top, rgba(255, 193, 7, 0.44), rgba(0, 208, 255, 0.5))!important; 
+}
+/*导航*/
+.bg1{
+   background:rgba(255, 193, 7, 0.44)!important;
+}
+.wang1 {
+    margin-right: 25px!important;
+}
+
+.wang2 {
+    background: #C12E2A!important;
+}
+.wang4{
+	padding-top: 2px!important;
+}
+.wang5{
+	margin-top: 5px!important;
+}

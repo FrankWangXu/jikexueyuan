@@ -1,0 +1,10 @@
+body{
+	background:-webkit-gradient(linear, 0 0, 0 bottom,  from(rgba(255, 193, 7, 0.44)), to(rgba(0, 208, 255, 0.5)))!important; 
+	background:rgba(255, 193, 7, 0.44); /* 一些不支持背景渐变的浏览器 */  
+    background:-moz-linear-gradient(top, rgba(255, 193, 7, 0.44), rgba(0, 208, 255, 0.5))!important;  
+    background:-o-linear-gradient(top, rgba(255, 193, 7, 0.44), rgba(0, 208, 255, 0.5))!important; 
+}
+#floater {
+    padding-top: 100px;
+    margin-bottom: 100%;
+}
