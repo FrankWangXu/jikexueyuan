@@ -3,7 +3,7 @@
 
 //连接数据库
 // $con = mysql_connect(HOST,UESRNAME,PASSWORD);
-$con = mysql_connect("localhost","root","");
+$con = mysql_connect("localhost","root","root");
 //选择数据库
 mysql_select_db("baidunews");
 //设定字符集
